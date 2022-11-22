@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'cordel';
+    src: url('fontes/cordelina.otf') format('opentype');
+    font-weight: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --fontecordel: 'cordel';
+}
+
+body{
+    background-color: lightgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header h1{
+    font-family: var(--fontecordel);
+    padding-top: 40px;
+    font-size: 9vw;
+}
+header p{
+    font-size: 20px;
+    font-family: cursive;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    font-family: var(--fontecordel);
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.541);
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.801);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 0px black;
+}
+
+section#i1{
+    background-image: url('./imagens/background001.jpg');
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section#i2{
+    background-image: url('./imagens/background002.jpg');
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
